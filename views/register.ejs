@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <%- include('./partials/head.ejs')%>
+    <body>
+            <div class="container">
+                <h1 class="display-4">Fashion Analytics </h1>
+            </div>
+            <div class="jumbotron">
+                <div class="container">
+                    <%- include('./partials/nav.ejs')%>
+
+                    <div class="register-component">
+                        <form method="POST" action="/register">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" name="Name" id="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Address</label>
+                                <textarea id="address" name="Address" class="form-control"></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                            <label for="gender">Gender</label>
+                            <input type="text" name="Gender" class="form-control" id="gender">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="age">Age</label>
+                                <input type="number" name="Age" class="form-control" id="age">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" name="Email" class="form-control" id="email">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="number" name="Phone" class="form-control" id="phone">
+                            </div>
+
+                            
+                            <div class="form-group">
+                                <label for="Password">Password</label>
+                                <input type="password" name="Password" class="form-control" id="password">
+                                <small id="info1" style="color:red" class="form-text text-muted"><%=message%></small>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="confirmPassword">Confirm Password</label>
+                                <input type="password" name="confirmPassword" class="form-control" id="confirmPassword">
+                                <small id="info2" style= "color:red" class="form-text text-muted"><%=message%></small>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </body>
+    
+
+</html>

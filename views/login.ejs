@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <%- include('./partials/head.ejs')%>
+    <body>
+            <div class="container">
+                <h1 class="display-4">Fashion Analytics </h1>
+            </div>
+            <div class="jumbotron">
+                <div class="container">
+                    <%- include('./partials/nav.ejs')%>
+                </div>
+
+
+                <div class="=login-component">
+
+                    <form method="POST" action='/login'>
+
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" name="Name" id="name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="Password">Password</label>
+                            <input type="password" name="Password" class="form-control" id="password">
+                            <small id="info1" style="color:red" class="form-text text-muted"><%=message%></small>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+    </body>
+</html>
