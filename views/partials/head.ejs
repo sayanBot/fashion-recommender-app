@@ -1,9 +1,35 @@
 <head>
     <title>Fashion | <%=title%></title>
-    <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+<script>
+    $(document).ready(()=>{
+        let password_errors = document.querySelectorAll('#error-info1, #error-info2')
+        let email_errors = document.querySelectorAll('#error-info3')
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        let urlParams = new URLSearchParams(location.search)
+        
+        if(urlParams.has('error')){
+           if(urlParams.get('error').includes('Email')){
+               email_errors.forEach((err)=>{
+                   err.innerHTML = urlParams.get('error')
+               })
+           }
+           else if(urlParams.get('error').includes('Password')){
+               password_errors.forEach((err)=>{
+                   err.innerHTML = urlParams.get('error')
+               })
+           }
+        }
+
+        let logout_btn = document.querySelector('#logout')
+        let register_btn = document.querySelector('#register')
+        let login_btn = document.querySelector('#login')
+
+        
+
+    })
+</script> 
 </head>

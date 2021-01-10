@@ -8,7 +8,7 @@
             <div class="jumbotron">
                 <div class="container">
                     <%- include('./partials/nav.ejs')%>
-
+                        
                     <div class="register-component">
                         <form method="POST" action="/register">
                             <div class="form-group">
@@ -44,16 +44,16 @@
                             <div class="form-group">
                                 <label for="Password">Password</label>
                                 <input type="password" name="Password" class="form-control" id="password">
-                                <small id="info1" style="color:red" class="form-text text-muted"><%=message%></small>
+                                <small id="error-info1" style="color:red;font-family:Geneva" class="form-text"></small>
                             </div>
 
                             <div class="form-group">
                                 <label for="confirmPassword">Confirm Password</label>
                                 <input type="password" name="confirmPassword" class="form-control" id="confirmPassword">
-                                <small id="info2" style= "color:red" class="form-text text-muted"><%=message%></small>
+                                <small id="error-info2" style= "color:red;font-family:Geneva" class="form-text "></small>
                             </div>
                             
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="submit" class="btn btn-primary">Register</button>
                         </form>
                     </div>
                 </div>

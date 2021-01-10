@@ -1,15 +1,20 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Home</title>
-    </head>
-
+    <%- include('./partials/head.ejs')%>
     <body>
-        <h1>HOME</h1>
-        <form>
-            <input  id='URL_img' type='text' name='image-url' placeholder="Image URL"/><br><br>
-            <button name="wishList">Add to WishList</button>
-            <button name='cart'>Add to Cart</button>
-            <button name='exit'>Exit</button>
-        </form>
+            <div class="container">
+                <h1 class="display-4">Fashion Analytics </h1>
+            </div>
+            <div class="jumbotron">
+                <div class="container">
+                    <%- include('./partials/nav.ejs')%>
+                    <form>
+                        <input  id='URL_img' type='text' name='image-url' placeholder="Image URL" class="form-control"/><br><br>
+                        <button name="wishList" class="btn btn-warning">Add to WishList</button>
+                        <button name='cart' class="btn btn-success">Add to Cart</button>
+                        <button name='exit' class="btn btn-danger">Exit</button>
+                    </form>
+                </div>
+            </div>
     </body>
 </html>
