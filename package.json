@@ -1,8 +1,8 @@
 {
-  "name": "project1234",
+  "name": "fashion-recommender-app",
   "version": "1.0.0",
   "description": "RecommenderApp",
-  "main": "app.js",
+  "main": "QueryConstants.js",
   "dependencies": {
     "body-parser": "^1.19.0",
     "connect-pg-simple": "^6.2.1",
@@ -18,18 +18,16 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node .",
-    "lint" : "eslint ."
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sayansaha1998/Project1234.git"
+    "url": "git+https://github.com/sayanBot/fashion-recommender-app.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sayansaha1998/Project1234/issues"
+    "url": "https://github.com/sayanBot/fashion-recommender-app/issues"
   },
-  "homepage": "https://github.com/sayansaha1998/Project1234#readme"
+  "homepage": "https://github.com/sayanBot/fashion-recommender-app#readme"
 }

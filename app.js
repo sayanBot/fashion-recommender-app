@@ -11,7 +11,7 @@ const session = require('express-session')
 const pgSession = require('connect-pg-simple')(session);
 const dotenv = require('dotenv').config()
 
-let PORT  = 3000;
+let PORT  = process.env.PORT || 3000
 app.listen(PORT,()=>console.log(`Listening to localhost at port ${PORT}`))
 
 app.set('view engine','ejs')
